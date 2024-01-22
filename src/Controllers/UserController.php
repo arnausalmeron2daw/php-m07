@@ -12,7 +12,11 @@
          
         }
         function index(){
-            echo View::render('user');
+            $data=[
+                'title'=>'Library',
+                'user'=>'Library User'
+            ];
+            echo View::render('user',$data);
         }
        
     }
